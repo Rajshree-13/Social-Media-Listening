@@ -13,9 +13,6 @@ MAX_LEN = 50
 with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
-with open("label_encoder.pkl", "rb") as f:
-    label_encoder = pickle.load(f)
-
 model = load_model("emotion_model.h5")
 
 # Text cleaning function
